@@ -104,9 +104,6 @@ class DanfeEtiquetaConfig:
         default_factory=lambda: Margins(top=3, right=3, bottom=3, left=3)
     )
     font_type: FontType = FontType.TIMES
-    # Logo da marca, centralizado entre o cabeçalho e os dados do emitente,
-    # como nas etiquetas dos marketplaces. A norma só define os campos
-    # mínimos, então o logo é um extra opcional.
     logo: str | BytesIO | bytes | None = None
     logo_height: Number = 12
     # Opcional desde a NT 2020.004 v1.10.
